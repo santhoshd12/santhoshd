@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <script>
+
+<!-- getting mark using javascript and finding its average-->
+
+        function mark(){
+            var a = document.getElementById("m1").value
+            var b = document.getElementById("m2").value
+            var c = document.getElementById("m3").value
+            var d = document.getElementById("m4").value
+            var e = document.getElementById("m5").value
+            var avrg = (parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e))/5
+            document.getElementById("avg").value = avrg;
+            
+        }
+
+    </script>
+</head>
+<body>
+    <CENTER>
+    <h1>MARK FINDER</h1>
+
+<!--html page to get input-->
+
+    <H2 style="background-color: cyan; color: rgb(125, 5, 117);"><marquee>KNOWLEDGE IS WELTH</marquee></H2>
+    MARK 1 : <input type = "text" id = "m1"><br><br>
+    MARK 2 : <input type = "text" id = "m2"><br><br>
+    MARK 3 : <input type = "text" id = "m3"><br><br>
+    MARK 4 : <input type = "text" id = "m4"><br><br>
+    MARK 5 : <input type = "text" id = "m5"><br><br><br>
+    YOUR AVERAGE : <input type = "text" id = "avg"><br><br>
+
+<!--function calling to find average-->
+    <input type = "submit" value = "CALCULATE" onclick="mark()">
+</CENTER>
+</body>
+</html>
